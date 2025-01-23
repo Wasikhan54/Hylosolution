@@ -1,6 +1,6 @@
 /*
 
-TemplateMo 565 Onix Digital
+TemplateMo 565 Hylos Media
 
 https://templatemo.com/tm-565-onix-digital
 
@@ -296,8 +296,16 @@ header
 .background-header .logo,
 .background-header .main-nav .nav li a {
   color: #1e1e1e!important;
-}
 
+}
+.logo{
+  position: absolute;
+  /* bottom: auto; */
+  margin-top: -114px;
+}
+.logo img{
+  width: 51%;
+}
 .background-header .main-nav .nav li:hover a {
   color: #ff685f!important;
 }
@@ -749,6 +757,7 @@ header
   .header-area .main-nav .nav {
     display: flex !important;
   }
+
 }
 
 /* 
@@ -1802,6 +1811,9 @@ form#contact button:hover {
 Footer Style
 --------------------------------------------- 
 */
+.logo1 img{
+  margin-top: -110px;
+}
 
 .footer-dec {
   width: 100%;
@@ -2007,6 +2019,15 @@ responsive
 
 @media (max-width: 767px) {
 
+  .header-area .logo {
+    margin-left: -388px;
+}
+
+.logo {
+position: absolute;
+/* bottom: auto; */
+margin-top: -103px;
+}
   .main-blue-button-hover{
     margin: 22px 0;
   }
@@ -2072,6 +2093,24 @@ responsive
   transition: all .3s;
   border: none;
   flex-direction: column;
+  /* width: 200px; */
+  /* margin: 12px; */
+  text-align: center;
+}
+.pakbutton1{ 
+  margin: 12px auto;
+  display: flex;
+  background-color: #ff695f;
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: capitalize;
+  padding: 12px 45px;
+  border-radius: 23px;
+  letter-spacing: 0.25px;
+  transition: all .3s;
+  border: none;
+  flex-direction: column;
   width: 200px;
   /* margin: 12px; */
   text-align: center;
@@ -2112,3 +2151,11 @@ responsive
         display: none; /* Hide content section on larger screens */
       }
     }
+@media screen and (max-width: 320px) {
+  .header-area .logo {
+    margin-left: -328px;
+}
+.logo {
+  margin-top: -79px;
+}
+}
